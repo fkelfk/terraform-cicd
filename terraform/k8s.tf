@@ -40,9 +40,9 @@ resource "google_computer_address" "default" {
     region = var.region
 }
 
-resource "kubernetes_serviec" "auth-service" {
+resource "kubernetes_serviec" "user-service" {
     metadata {
-        name = "auth-service"
+        name = "user-service"
     }
     spec {
         type = "loadBalancer"
